@@ -103,7 +103,7 @@ class TFP_API {
 		$status_code = wp_remote_retrieve_response_code( $response );
 		$body        = wp_remote_retrieve_body( $response );
 
-		if ( 200 !== (int) $status_code ) {
+		if ( 200 !== $status_code ) {
 			return new WP_Error(
 				'tfp_api_error',
 				sprintf(
