@@ -1,3 +1,5 @@
+/* Today Football Prediction – Public styles */
+
 /* Predictions container */
 .fp-predictions-container {
 	width: 100%;
@@ -54,7 +56,7 @@ table.fp-predictions-table td {
 	vertical-align: middle;
 	font-size: 1em;
 	font-weight: 500;
-	line-height: revert-rule;
+	line-height: revert-layer;
 }
 
 table.fp-predictions-table thead th {
