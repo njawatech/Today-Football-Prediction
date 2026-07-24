@@ -1,0 +1,62 @@
+/* Today Football Prediction – Admin styles */
+
+.tfp-admin-wrap {
+	max-width: 960px;
+}
+
+.tfp-admin-columns {
+	display: flex;
+	gap: 24px;
+	margin-top: 20px;
+	align-items: flex-start;
+}
+
+.tfp-admin-main {
+	flex: 1 1 auto;
+}
+
+.tfp-admin-sidebar {
+	flex: 0 0 280px;
+	max-width: 280px;
+}
+
+.tfp-admin-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 20px;
+	box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.04 );
+}
+
+.tfp-admin-card h3 {
+	margin-top: 16px;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #646970;
+}
+
+.tfp-admin-card h3:first-child {
+	margin-top: 0;
+}
+
+.tfp-admin-card code {
+	display: block;
+	margin: 6px 0;
+	padding: 6px 10px;
+	background: #f0f0f1;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+@media ( max-width: 782px ) {
+	.tfp-admin-columns {
+		flex-direction: column;
+	}
+
+	.tfp-admin-sidebar {
+		flex: 1 1 auto;
+		max-width: 100%;
+	}
+}
