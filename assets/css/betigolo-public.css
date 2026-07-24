@@ -1,0 +1,240 @@
+/* Predictions container */
+.fp-predictions-container {
+	width: 100%;
+	margin: 20px 0;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.fp-predictions-header {
+	margin-bottom: 10px;
+}
+
+.fp-predictions-header h2 {
+	font-size: 1.6em;
+	font-weight: 700;
+	margin: 0;
+	padding: 10px;
+	background: #f9f9f9;
+	border-left: 4px solid #0073aa;
+}
+
+/* Day table wrapper */
+.fp-day-table {
+	margin-bottom: 25px;
+}
+
+/* Day header - covers both h3 and h4 */
+.fp-day-header h3,
+.fp-day-header h4 {
+	background: #28a745;
+	color: #ffffff;
+	margin: 0;
+	padding: 8px 10px;
+	font-size: 1.1em;
+	font-weight: 700;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 36px;
+}
+
+/* Table */
+table.fp-predictions-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+}
+
+table.fp-predictions-table th,
+table.fp-predictions-table td {
+	padding: 2px 6px;
+	border-bottom: 1px solid #e0e0e0;
+	vertical-align: middle;
+	font-size: 1em;
+	font-weight: 500;
+	line-height: revert-rule;
+}
+
+table.fp-predictions-table thead th {
+	background: #f5f5f5;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	color: #555;
+}
+
+/* Flag / League column */
+th.fp-col-league,
+td.fp-col-league {
+	width: 40px;
+	min-width: 40px;
+	max-width: 40px;
+	padding: 0 5px;
+	text-align: center;
+	overflow: hidden;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.fp-col-league .fp-flag {
+	font-size: 1.2em;
+	line-height: 1;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+/* Fixtures column */
+td.fp-col-fixtures {
+	text-align: left;
+	white-space: normal !important;
+	word-wrap: break-word !important;
+	overflow-wrap: break-word !important;
+}
+
+td.fp-col-fixtures .fp-match {
+	display: block;
+	font-weight: 600;
+}
+
+td.fp-col-fixtures .fp-competition {
+	display: block;
+	color: #888;
+	font-size: 0.85em;
+	font-weight: 500;
+	margin-top: 3px;
+}
+
+/* Tips / Prediction column */
+th.fp-col-tips,
+td.fp-col-tips {
+	text-align: center !important;
+}
+
+td.fp-col-tips .fp-prediction-badge {
+	display: inline-block;
+	background: #ff8c00;
+	color: #fff;
+	padding: 5px 12px;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 0.95em;
+	white-space: nowrap;
+}
+
+/* Result/Odds column */
+th.fp-col-result,
+td.fp-col-result {
+	text-align: center !important;
+}
+
+td.fp-col-result .fp-status-badge-pending {
+	display: inline-block;
+	background: #fff8e1;
+	color: #333;
+	padding: 5px 12px;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 1em;
+	white-space: nowrap;
+}
+
+/* Status / Pending column */
+th.fp-col-status,
+td.fp-col-status {
+	text-align: center !important;
+}
+
+td.fp-col-status .fp-status-badge-pending {
+	display: inline-block;
+	background: #e8f5e9;
+	color: #2e7d32;
+	padding: 5px 12px;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 0.9em;
+	white-space: nowrap;
+}
+
+/* Alternating row colors */
+table.fp-predictions-table tbody tr:nth-child(even):not(.fp-date-header) {
+	background: #f7f7f7;
+}
+
+table.fp-predictions-table tbody tr:nth-child(odd):not(.fp-date-header) {
+	background: #ffffff;
+}
+
+/* Row hover */
+table.fp-predictions-table tbody tr:hover {
+	background: #eef6fb;
+}
+
+/* No predictions message */
+.fp-no-predictions {
+	padding: 20px;
+	background: #fffbe6;
+	border: 1px solid #ffe58f;
+	color: #8a6d3b;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+/* Error message */
+.fp-error {
+	padding: 20px;
+	background: #fff0f0;
+	border: 1px solid #ffccc7;
+	color: #a8071a;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+	.fp-predictions-header h2 {
+		font-size: 1.3em;
+	}
+
+	.fp-day-header h3,
+	.fp-day-header h4 {
+		font-size: 1em;
+		padding: 6px 8px;
+		text-align: center;
+		min-height: 32px;
+	}
+
+	table.fp-predictions-table th,
+	table.fp-predictions-table td {
+		padding: 2px 3px;
+		font-size: 0.95em;
+	}
+
+	th.fp-col-league,
+	td.fp-col-league {
+		width: 32px;
+		min-width: 32px;
+		max-width: 32px;
+		padding: 0 3px;
+	}
+
+	.fp-col-league .fp-flag {
+		font-size: 1.1em;
+	}
+
+	td.fp-col-fixtures .fp-match {
+		font-size: 1em;
+	}
+
+	td.fp-col-tips .fp-prediction-badge,
+	td.fp-col-result .fp-status-badge-pending,
+	td.fp-col-status .fp-status-badge-pending {
+		padding: 3px 6px;
+		font-size: 0.85em;
+	}
+}
